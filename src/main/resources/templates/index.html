@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+</head>
+<body>
+<div class="header"></div>
+<div class="content">
+    <div class="page">
+        <div class="menu">
+            <div class="list">
+                <a href="/">Accueil</a>
+                <a href="/gallery">Galeries</a>
+                <a href="/contact">Contact</a>
+            </div>
+            <div id="social"></div>
+        </div>
+        <div class="cont" style="background-image: url('/img/montagne.jpg')">
+            <div>
+                <h1>DANIEL AEBERSOLD</h1>
+                <p>---- PHOTOGRAPHE ----</p>
+            </div>
+        </div>
+    </div>
+    <div class="social">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-pinterest-square"></i>
+        <i class="fab fa-instagram-square"></i>
+    </div>
+</div>
+
+<div class="footer"></div>
+</body>
+
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#social").load("menuLiens.html");
+    });
+</script>
+</html>

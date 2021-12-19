@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+</head>
+<body>
+<div class="header"></div>
+<div class="content">
+  <div class="page">
+    <div class="menu">
+      <div class="list">
+        <a href="/">Accueil</a>
+        <a href="/gallery">Galeries</a>
+        <a href="/contact">Contact</a>
+        <div class="contact" id="form-contact">
+          <form action="">
+            <div>
+              <input type="text" placeholder="Prénom" />
+            </div>
+            <div><input type="text" placeholder="Email" /></div>
+            <div><input type="text" placeholder="Object" /></div>
+            <div>
+                  <textarea
+                          placeholder="Message"
+                          style="resize: none"
+                  ></textarea>
+            </div>
+            <button>Valider</button>
+          </form>
+          <div class="adress">
+            <div>xxx rue de votre maison</div>
+            <div>xxx Paris France</div>
+            <div>Tél: xxx-xx-xxx-xx</div>
+            <div>Email: email@email.com</div>
+          </div>
+        </div>
+      </div>
+      <div class="social">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-pinterest-square"></i>
+        <i class="fab fa-instagram-square"></i>
+      </div>
+    </div>
+    <div class="cont">
+      <h4 style="color: black; padding-top: 360px; font-size: 20px"> La photographie est un langage des plus universels qui soit, <br>
+        et vous n'avez pas besoin de parler</h4>
+    </div>
+  </div>
+</div>
+<div class="footer"></div>
+</body>
+
+<script src="/js/script.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script>
+  function showForm() {
+    const x = window.getComputedStyle(
+            document.querySelector("#form-contact")
+    ).display;
+    if (x === "none") {
+      document.getElementById("form-contact").style.display = "flex";
+    } else {
+      document.getElementById("form-contact").style.display = "none";
+    }
+  }
+  showForm();
+</script>
+</html>

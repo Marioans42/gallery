@@ -1,0 +1,161 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  /* border: 1px red solid; */
+}
+
+.header {
+  width: 100%;
+  height: 30px;
+  background-color: #d1cccc;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #d1cccc;
+  z-index: 1;
+}
+
+.content {
+  background-color: #ecebeb;
+  width: 100%;
+  height: 100%;
+  padding: 30px 20px 30px 20px;
+}
+
+.content .page {
+  width: 100%;
+  height: 100%;
+  /* border: black solid 1px; */
+  display: grid;
+  grid-template-columns: 17% 83%;
+}
+
+.page .menu {
+  /* border: 1px solid green; */
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 90% 10%;
+  padding: 15px;
+}
+
+.menu .list {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 45px;
+}
+
+.menu .list a {
+  height: 40px;
+  /* border: orangered solid 1px; */
+  margin-bottom: 1em;
+  padding-left: 0.7em;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition-duration: 0.4s;
+}
+.menu .list a:hover {
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.menu .social {
+  width: 70%;
+  height: 100%;
+  /* border: 1px solid red; */
+}
+.menu .social {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social i {
+  font-size: 30px;
+}
+.social i:hover {
+  color: pink;
+}
+
+.page .cont {
+  /* border: 1px solid blue; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blanchedalmond; */
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+.cont h1 {
+  font-size: 8vh;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.cont p {
+  font-size: 3vh;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.list .contact {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid saddlebrown; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* padding: 10px 5px 10px 5px; */
+  display: none;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 11px;
+  border: 1px solid #4e3535;
+}
+
+.contact input {
+  height: 25px;
+}
+.contact textarea {
+  height: 75px;
+}
+
+.contact button {
+  float: right;
+  border: 1px solid #4e3535;
+  color: #fff;
+  background-color: #4e3535;
+  padding: 0 25px 0 25px;
+  font-size: small;
+  text-transform: uppercase;
+}
+
+.contact .adress {
+  font-size: 12px;
+}
+.logo{
+  color: black;
+}

@@ -1,0 +1,49 @@
+.page .cont {
+  /* border: 1px solid blue; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+
+.page .cont .list-image {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+
+.sous-menu {
+  /* border: 1px solid #000; */
+  margin-top: -20px;
+  margin-bottom: 10px;
+  padding-left: 8px;
+}
+.sous-menu > div {
+  /* border: 1px solid #000; */
+  font-weight: 500;
+  cursor: pointer;
+}
+.sous-menu > div:hover {
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-menu {
+  height: 10px !important;
+  /* border: orangered solid 1px; */
+  padding: 0 !important;
+  margin: 0 !important;
+  text-decoration: none;
+  color: black;
+  font-size: 14px !important;
+  text-transform: initial !important;
+  transition-duration: 0.4s;
+}
+
+.sub-menu:hover {
+  border: none !important;
+}
